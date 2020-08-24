@@ -1,4 +1,4 @@
-# workcation
+# Workcation
 
 ## Project setup
 ```
