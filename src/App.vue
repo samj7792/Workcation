@@ -24,7 +24,7 @@
           />
         </svg>
       </div>
-      <div>
+      <div class="flex">
         <button>
           <svg
             class="h-6 w-6 fill-current text-gray-500"
@@ -46,13 +46,80 @@
         </button>
       </div>
     </header>
-    <section class="bg-gray-800">
-      <input placeholder="Search by keywords" />
-      <button>Filters</button>
+    <section class="flex justify-between bg-gray-800 px-4 py-3">
+      <div class="relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+          <svg
+            class="h-6 w-6 fill-current text-gray-600"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.32 14.9l1.1 1.1c.4-.02.83.13 1.14.44l3 3a1.5 1.5 0 0 1-2.12 2.12l-3-3a1.5 1.5 0 0 1-.44-1.14l-1.1-1.1a8 8 0 1 1 1.41-1.41l.01-.01zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
+            />
+          </svg>
+        </div>
+        <input
+          class="bg-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900 text-white rounded-lg pl-10 pr-4 py-2"
+          placeholder="Search by keywords"
+        />
+      </div>
+      <button
+        class="flex items-center hover:bg-gray-600 focus:outline-none focus:shadow-outline bg-gray-700 rounded-lg shadow pl-3 pr-4"
+      >
+        <svg
+          class="h-6 w-6 fill-current text-gray-500"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            v-if="isOpen"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+          />
+          <path
+            v-if="!isOpen"
+            fill-rule="evenodd"
+            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+          />
+        </svg>
+        <span class="ml-1 text-white font-medium">Filters</span>
+      </button>
     </section>
-    <main>
-      <h3>Los Angeles</h3>
-      <p>Live like the stars in these luxurious Southern California estates.</p>
+    <main class="px-4 py-6">
+      <h3 class="text-gray-900 text-xl">Los Angeles</h3>
+      <p class="text-gray-600">Live like the stars in these luxurious Southern California estates.</p>
+      <div>
+        <div>
+          <div>
+            <img
+              class="rounded-lg shadow-md h-64"
+              src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+              alt="Modern Villa"
+            />
+          </div>
+          <div class="relative px-4 -mt-16">
+            <div class="bg-white rounded-lg px-4 py-4 shadow-lg">
+              <div class="flex">
+                <span
+                  class="inline-block px-2 py-1 leading-none bg-teal-200 text-teal-800 rounded-full font-semibold uppercase tracking-wide text-xs"
+                >Plus</span>
+                <div
+                  class="ml-2 text-xs text-gray-600 font-semibold uppercase tracking-wide"
+                >3 beds &bull; 2 baths</div>
+              </div>
+              <h4 class="text-gray-900 font-semibold text-lg">Modern home in city center</h4>
+              <div>
+                <span>$1,400</span>
+                <span>/wk</span>
+              </div>
+              <div>34 reviews</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </div>
 </template>
