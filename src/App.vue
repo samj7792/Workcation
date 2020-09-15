@@ -7,12 +7,13 @@
         <h3 class="text-gray-900 text-xl">Los Angeles</h3>
         <p class="text-gray-600">Live like the stars in these luxurious Southern California estates.</p>
       </div>
-      <div class="mt-6 sm:px-4 sm:overflow-x-auto">
-        <div class="sm:flex sm:-mx-2 sm:pb-8">
+      <div class="mt-6 sm:overflow-x-auto">
+        <div class="px-4 sm:inline-flex sm:pb-8">
           <div
             v-for="i in 4"
             :key="i"
-            class="px-4 mt-10 sm:max-w-xs sm:w-full sm:flex-shrink-0 sm:mt-0 sm:px-2 sm:py-4"
+            class="sm:w-80 sm:flex-shrink-0"
+            :class="{'mt-8 sm:ml-4 sm:mt-0': i > 1}"
           >
             <div class="relative pb-5/6">
               <img
