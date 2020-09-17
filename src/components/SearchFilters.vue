@@ -130,7 +130,7 @@ export default {
   props: [],
   data() {
     return {
-      isOpen: false,
+      isOpen: true,
     };
   },
   methods: {
