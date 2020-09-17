@@ -56,7 +56,7 @@ export default {
           title: "Modern home in city center",
           price: 160000,
           reviewCount: 45,
-          rating: 4,
+          rating: 3,
         },
         {
           imageUrl:
@@ -66,7 +66,7 @@ export default {
           title: "Modern home in city center",
           price: 320000,
           reviewCount: 1,
-          rating: 4,
+          rating: 1,
         },
         {
           imageUrl:
@@ -76,7 +76,7 @@ export default {
           title: "Modern home in city center",
           price: 210000,
           reviewCount: 21,
-          rating: 4,
+          rating: 5,
         },
       ],
     };
